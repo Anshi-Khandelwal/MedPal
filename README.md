@@ -1,4 +1,7 @@
 # MedPal
+<p align="center">
+  <img src="https://github.com/Anshi-Khandelwal/MedPal/blob/main/MedPal%20logo.png" alt="MedPal Logo" width="300"/>
+</p>
 One Stop Solution For healthcare
 # 🩺 MedPal - Your Smart Healthcare Assistant
 
