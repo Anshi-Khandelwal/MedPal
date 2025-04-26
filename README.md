@@ -29,14 +29,12 @@ Built using:
 - Sentence Transformers (MiniLM)
 - Weaviate Vector Database
 - Streamlit (for app deployment)
-- Gradio (for optional demo UI)
 - Hugging Face Spaces (for hosting)
 
 ---
 
 ## 📦 Installation
 
-```bash
 # Clone the repository
 git clone https://github.com/your-username/medpal-healthbot.git
 cd medpal-healthbot
@@ -55,9 +53,6 @@ If severity is high, you'll be asked for your ZIP code to find nearby clinics!
 
 --
 ## 📄 Project Structure
-bash
-Copy
-Edit
 medpal-healthbot/
 │
 ├── medpal.py          # Core healthbot logic (fine-tuned + RAG)
