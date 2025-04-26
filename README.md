@@ -64,4 +64,3 @@ medpal-healthbot/
 ├── app.py             # Streamlit/Gradio app script
 ├── requirements.txt   # Required Python libraries
 ├── README.md          # Project documentation
-
