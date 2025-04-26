@@ -1,8 +1,10 @@
-# MedPal
-<p align="center">
-  <img src="https://github.com/Anshi-Khandelwal/MedPal/blob/main/MedPal%20logo.png" alt="MedPal Logo" width="300"/>
-</p>
+# MedPal 
 One Stop Solution For healthcare
+<p align="center">
+  <img src="https://github.com/Anshi-Khandelwal/MedPal/blob/main/MedPal%20logo.png" alt="MedPal Logo" width="100"/>
+</p>
+
+
 # 🩺 MedPal - Your Smart Healthcare Assistant
 
 MedPal is a generative AI-powered healthcare assistant that answers medical questions, suggests home remedies, assesses symptom severity, and recommends nearby clinics based on user input.
