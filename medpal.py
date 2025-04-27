@@ -39,7 +39,7 @@ def connect_weaviate():
     #     client = None
     # return client
     
-  def connect_weaviate():
+def connect_weaviate():
     weaviate_url = os.getenv("WEAVIATE_URL")
     weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
 
