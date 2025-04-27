@@ -1,7 +1,7 @@
 # medpal.py
 
 import weaviate
-# from weaviate import Client
+from weaviate import Client
 from weaviate.auth import AuthApiKey
 from langchain_community.vectorstores import Weaviate as WeaviateVectorStore
 # from langchain.embeddings import SentenceTransformerEmbeddings
