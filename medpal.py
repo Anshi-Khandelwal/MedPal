@@ -38,10 +38,6 @@ def connect_weaviate():
     #     print(f"Connection failed: {e}")
     #     client = None
     # return client
-    
-def connect_weaviate():
-    weaviate_url = os.getenv("WEAVIATE_URL")
-    weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
 
     try:
         auth_config = AuthApiKey(api_key=weaviate_api_key)
