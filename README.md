@@ -35,6 +35,15 @@ Built using:
 - Hugging Face Spaces (for hosting)
 
 ---
+## 📂 Dataset
+
+The base healthcare knowledge for RAG comes from the **MedQuAD dataset**, available publicly on Hugging Face:
+
+👉 [Access MedQuAD Dataset](https://huggingface.co/datasets/lavita/MedQuAD/viewer?views%5B%5D=train)
+
+We used the training split to populate our Weaviate knowledge base.
+
+---
 
 ## 📦 Installation
 
@@ -46,6 +55,10 @@ cd medpal-healthbot
 pip install -r requirements.txt
 
 🎯 How to Use
+### 1. Launch MedPal Locally
+
+streamlit run streamlit_app.py
+
 Open the Streamlit app (or Colab for manual testing).
 
 Enter your health-related question.
@@ -54,11 +67,15 @@ MedPal will generate an intelligent, safe answer.
 
 If severity is high, you'll be asked for your ZIP code to find nearby clinics!
 
---
-## 📄 Project Structure
-medpal-healthbot/
+---
+## 📂 Project Structure
+
+```plaintext
+MedPal/
 │
-├── medpal.py          # Core healthbot logic (fine-tuned + RAG)
-├── app.py             # Streamlit/Gradio app script
-├── requirements.txt   # Required Python libraries
-├── README.md          # Project documentation
+├── models/                   # (Locally stored fine-tuned FLAN-T5 model)
+├── medpal.py                  # Core backend: RAG retrieval + fine-tuned generation
+├── streamlit_app.py            # Streamlit frontend UI
+├── requirements.txt            # Python library dependencies
+├── README.md                   # Project documentation
+└── .gitignore                  # Excludes large folders (like models/) from Git tracking
