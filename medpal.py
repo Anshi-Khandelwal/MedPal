@@ -23,21 +23,7 @@ def connect_weaviate():
     weaviate_url = WEAVIATE_URL
     weaviate_api_key = WEAVIATE_API_KEY
     
-    # try:
-    #     auth_config = weaviate.AuthApiKey(api_key=weaviate_api_key)
-    #     client = weaviate.Client(
-    #         url=weaviate_url,
-    #         auth_client_secret=auth_config
-    #     )
-    #     if client.is_ready():
-    #         print("Connection successful")
-    #     else:
-    #         print("Weaviate server not ready")
-    #         client = None
-    # except Exception as e:
-    #     print(f"Connection failed: {e}")
-    #     client = None
-    # return client
+   
 
     try:
         auth_config = AuthApiKey(api_key=weaviate_api_key)
@@ -94,37 +80,7 @@ def fetch_nearby_clinics(zip_code):
 #     return tokenizer, model
 from pathlib import Path
 
-# def load_finetuned_model():
-#     # Get the absolute path of the current script
-#     current_file = Path(__file__).resolve()
-    
-#     # Get the parent directory of the current script (your project root)
-#     project_dir = current_file.parent
-    
-#     # Build the path to your models directory
-#     model_path = project_dir / "models" / "flan-t5-healthcare-finetuned"
-    
-#     print(f"Looking for model at: {model_path}")
-    
-#     # Check if the path exists
-#     if model_path.exists():
-#         try:
-#             print(f"Loading model from: {model_path}")
-#             tokenizer = AutoTokenizer.from_pretrained(str(model_path), local_files_only=True)
-#             model = AutoModelForSeq2SeqLM.from_pretrained(str(model_path), local_files_only=True)
-#             return tokenizer, model
-#         except Exception as e:
-#             print(f"Error loading custom model: {e}")
-#             print("Falling back to default model")
-#             tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-small")
-#             model = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-small")
-#             return tokenizer, model
-#     else:
-#         print(f"Model directory not found at {model_path}")
-#         print("Using default model instead")
-#         tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-small")
-#         model = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-small")
-#         return tokenizer, model
+
 def load_finetuned_model():
     # Get the absolute path of the current script
     current_file = Path(__file__).resolve()
