@@ -16,8 +16,8 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-WEAVIATE_URL="https://fepgdf97stgeefrfi9qnvg.c0.us-east1.gcp.weaviate.cloud"
-WEAVIATE_API_KEY= "DPxBIZLN2cXBXkayuLo4uUhwMIc2qjtv84rR"
+WEAVIATE_URL= ["WEAVIATE_URL]
+WEAVIATE_API_KEY= ["WEAVIATE_API_KEY]
 
 def connect_weaviate():
     weaviate_url = WEAVIATE_URL
